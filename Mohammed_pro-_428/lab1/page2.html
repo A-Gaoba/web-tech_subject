@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Web Page Title</title>
+    <title>seconed variant</title>
     <style>
       body {
         font-family: Arial, sans-serif;
         margin: 2px;
         padding: 4px;
         border: 2px solid #000000;
+        height: 100vh;
       }
 
       header {
@@ -20,23 +21,29 @@
         justify-content: space-between;
         align-items: center;
         margin: auto;
+        margin-top: 20px;
         width: 95%;
       }
 
       nav {
         display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       nav a {
-        color: #fff;
+        background-color: #b6afaf;
+        color: #000000;
+        padding: 1px;
         text-decoration: none;
         margin: 0 15px;
+        font-size: small;
       }
 
       nav a:first-child {
-        background-color: #b6afaf;
-        color: #000000;
-        padding: 2px  7px;
+        background-color: #b66f6f;
+        color: #ffffff;
+        padding: 5px 10px;
       }
 
       header .logo {
@@ -46,29 +53,61 @@
         padding-left: 8px;
         color: black;
         margin-left: 10px;
+        font-size: large;
+      }
+
+      header span {
+        font-size: small;
+        background-color: #e5f9eb;
+        color: #000000;
       }
 
       .hero {
         display: flex;
-        height: 60px;
+        height: 200px;
         width: 95%;
         margin: auto;
+        margin-top: 20px;
         justify-content: space-between;
         align-items: center;
       }
 
       .right {
-        height: 40px;
         width: 50%;
-        background-color: #b6afaf;
+        /* background-color: #b6afaf; */
         border-radius: 5px;
+        padding: 10px;
+      }
+
+      .title {
+        color: #fff;
+        background-color: #c1b6b6;
+        border-radius: 10px;
+        width: 80%;
+      }
+
+      .paragraph{
+        background-color: #e7e0e0;
+        border-radius: 10px;
+        width: 90%;
       }
 
       .left {
-        height: 40px;
+        display: flex;
+        height: 200px;
         width: 50%;
         background-color: #b6afaf;
         border-radius: 3px;
+      }
+
+
+
+      .btn1{
+        background-color: skyblue;
+      }
+
+      .btn2{
+        background-color: rgb(100, 153, 174);
       }
 
       .content {
@@ -82,8 +121,6 @@
         margin-top: 20px;
         padding-bottom: 20px;
       }
-
-
 
       .box {
         background-color: #d7d5d5;
@@ -101,24 +138,35 @@
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
+        <a href="#">Services</a>
       </nav>
       <div>
         <span>Variant1</span>
         <span class="logo">logo</span>
       </div>
     </header>
-
-    <section class="hero">
-      <div class="right">sdlfjasfa</div>
-      <div class="left"></div>
-    </section>
-
-
-    <section class="content">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      </div>
-    </section>
+    <main>
+      <section class="hero">
+        <div class="right">
+          <h2 class="title">Welcome to our website!</h2>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="btns">
+            <button class="btn1"><a href="index.html"></a>back</button>
+            <button class="btn2">button2</button>
+          </div>
+        </div>
+        <div class="left"></div>
+      </section>
+      <section class="content">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </section>
+    </main>
   </body>
 </html>
