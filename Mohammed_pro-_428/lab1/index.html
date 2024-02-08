@@ -4,10 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Лабораторная работа 1</title>
+
     <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+  
+      .question {
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #f4f4f4;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: background-color 0.3s ease;
+      }
+  
+      .question:hover {
+        background-color: #ddd;
+      }
+  
       .answer {
         display: none;
-        padding-left: 20px;
+        padding: 0 20px;
+        margin: 5px 0 10px;
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+  
+      .answer.show {
+        display: block;
+        animation: fadeIn 0.5s;
+      }
+  
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
     </style>
   </head>
@@ -32,67 +70,5 @@
         <li><a href="page8.html">Вариант 8</a></li>
       </ul>
     </div>
-    <section id="questions">
-      <h2>Контрольные вопросы</h2>
-      <div class="question" onclick="toggleAnswer('answer1')">
-        1. Что такое HTML?
-      </div>
-      <div id="answer1" class="answer">
-        HTML (HyperText Markup Language) — это язык гипертекстовой разметки,
-        используемый для создания и структурирования разделов на веб-страницах.
-      </div>
-
-      <div class="question" onclick="toggleAnswer('answer2')">
-        2. Какова базовая структура верстки?
-      </div>
-      <div id="answer2" class="answer">
-        Базовая структура верстки включает в себя элементы html, head, и body. В
-        head обычно помещают метаданные и заголовок страницы, а в body —
-        содержимое веб-страницы.
-      </div>
-
-      <div class="question" onclick="toggleAnswer('answer3')">
-        3. Для чего используется элемент div?
-      </div>
-      <div id="answer3" class="answer">
-        Элемент div используется для группировки блоков контента и структурных
-        элементов на веб-странице, что упрощает стилизацию и применение CSS.
-      </div>
-
-      <div class="question" onclick="toggleAnswer('answer4')">
-        4. Для чего используется элемент span?
-      </div>
-      <div id="answer4" class="answer">
-        Элемент span используется для группировки и стилизации частей текста
-        внутри других элементов, не создавая при этом новых блоков.
-      </div>
-
-      <div class="question" onclick="toggleAnswer('answer5')">
-        5. Для чего используется элемент p?
-      </div>
-      <div id="answer5" class="answer">
-        Элемент p используется для разметки абзацев текста. Каждый абзац
-        начинается с новой строки.
-      </div>
-
-      <div class="question" onclick="toggleAnswer('answer6')">
-        6. Для чего используется элемент head?
-      </div>
-      <div id="answer6" class="answer">
-        Элемент head содержит метаданные о веб-странице, такие как её заголовок,
-        ссылки на стили, скрипты и другие инструкции, не видимые непосредственно
-        на странице.
-      </div>
-    </section>
-    <script>
-      function toggleAnswer(id) {
-        var answer = document.getElementById(id);
-        if (answer.style.display === "none") {
-          answer.style.display = "block";
-        } else {
-          answer.style.display = "none";
-        }
-      }
-    </script>
-  </body>
+  </body> 
 </html>
